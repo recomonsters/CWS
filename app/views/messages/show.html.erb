@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Control:</strong>
+  <%= @message.control_id %>
+</p>
+
+<p>
+  <strong>Sent to:</strong>
+  <%= @message.sent_to %>
+</p>
+
+<p>
+  <strong>Date sent:</strong>
+  <%= @message.date_sent %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @message.subject %>
+</p>
+
+<p>
+  <strong>Received from:</strong>
+  <%= @message.received_from %>
+</p>
+
+<p>
+  <strong>Attachment:</strong>
+  <%= @message.attachment %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @message.notes %>
+</p>
+
+<p>
+  <strong>Send to:</strong>
+  <%= @message.send_to %>
+</p>
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>
